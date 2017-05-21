@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-family: 'Open Sans', sans-serif; }
+  body h1 {
+    color: #ccc;
+    weight: 300; }
+  body figure {
+    margin: auto; }
+  body .content {
+    position: relative;
+    z-index: 3;
+    background: white;
+    margin-bottom: 400px; }
+    body .content article {
+      padding: 100px 0;
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center; }
+    body .content img {
+      max-width: 100%; }
+
+.bird-box {
+  position: relative;
+  height: 600px;
+  background-image: url("../img/bird-bg.jpg");
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+  z-index: 4; }
+
+.logo {
+  height: 100px;
+  width: 100%;
+  background-image: url("../img/black-bird-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; }
+
+.fore-bird {
+  width: 960px;
+  height: 733px;
+  background-image: url("../img/fore-bird.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 380px; }
+
+.back-bird {
+  position: absolute;
+  width: 960px;
+  height: 298px;
+  background-image: url("../img/back-bird.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  left: 50%;
+  margin-left: -480px; }
+
+.clothes-pics {
+  margin-bottom: 100px; }
+
+figure {
+  margin-bottom: 20px !important;
+  position: relative;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer; }
+
+figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: -100%;
+  background: black;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 11px;
+  transition: all 0.3s ease-in-out; }
+
+figure.is-showing {
+  opacity: 1;
+  transform: translateX(0px); }
+
+figure:hover figcaption {
+  left: 0; }
+
+figure:hover img {
+  transform: scale(1.1); }
+
+img {
+  display: block;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out; }
+
+.large-window {
+  height: 640px;
+  background-image: url("../img/model2.jpg");
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin-top: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.window-tint {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.promo-text {
+  color: #fff;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 1.2; }
+
+.promo-text strong {
+  display: block;
+  font-size: 30px; }
+
+.promo-text span {
+  font-weight: 300;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6); }
+
+.window-cta {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid white;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out; }
+
+.window-cta:hover {
+  background: white;
+  color: black; }
+
+.blog-posts {
+  margin-top: 100px; }
+  .blog-posts .post {
+    border: 1px solid #e1e1e1;
+    padding: 20px 20px 0;
+    background-color: white;
+    position: relative; }
+  .blog-posts .post-1 {
+    transform: translate(100px, 20px); }
+  .blog-posts .post-2 {
+    z-index: 2; }
+  .blog-posts .post-3 {
+    transform: translate(-100px, 20px); }
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  footer .footer-content {
+    max-width: 640px;
+    margin: 0 auto; }
+  footer a {
+    color: white; }
